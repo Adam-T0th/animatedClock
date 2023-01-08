@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    background: linear-gradient(#D3D3D3, #9E9E9E);
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#stopTime {
+    border: none;
+    border-radius: .5rem;
+    background-color: rgb(44 172 172);
+    color: #FFF;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 44%;
+}
+
+#stopTime:hover {
+    cursor: pointer;
+}
+
+#hour-column-1 div, #hour-column-2 div {
+    border: 1px solid red;
+    padding: 2rem;
+}
+
+#minute-column-1 div, #minute-column-2 div {
+    border: 1px solid green;
+    padding: 2rem;
+}
+
+#seconds-column-1 div, #seconds-column-2 div {
+    border: 1px solid blue;
+    padding: 2rem;
+}
+
+#hoursColumns, #minutesColumns, #secondsColumns {
+    display: flex;
+    position: relative;
+    top: 4rem;
+}
+
+
+#timeDiv {
+    display: flex;
+}
+
+.hoursTesting, .minutesTesting, .secondsTesting {
+    padding: 1rem;
+    color: #FFF;
+    margin: .5rem;
+}
+
+#hours, #minutes, #seconds {
+    display: flex;
+    flex-flow: row;
+}
+
+.hoursTesting {
+    background-color: red;
+}
+
+.minutesTesting {
+    background-color: blue;
+}
+
+.secondsTesting {
+    background-color: green;
+}

@@ -1,0 +1,21 @@
+- linear-gradient background
+- circle surrounding the current position of columns (i.e.: the current value of time) + bold text for the current value
+- 6 columns in total: 2 for each (hours, minutes, seconds)
+- white box shadow for columns; offset, with "light" coming from one side
+
+document.on(pageLoad) {
+    var hoursColumn_1 = document.querySelectorAll('div#hour-column-1 div');
+    hoursColumn_1.forEach((element) => {
+        if(element.match(/\d/) && element.match(/\d/)[0] == (`${hoursString}`).split('')[0]) {
+            document.querySelector(element).innerHTML = (`${hoursString}`).split('')[0]);
+        }
+    });
+
+    var hoursColumn_2 = document.querySelectorAll('div#hour-column-2 div');
+
+    var minutesColumn_1 = document.querySelectorAll('div#minute-column-1 div');
+    var minutesColumn_2 = document.querySelectorAll('div#minute-column-2 div');
+
+    var secondsColumn_1 = document.querySelectorAll('div#seconds-column-1 div');
+    var secondsColumn_2 = document.querySelectorAll('div#seconds-column-2 div');
+}
