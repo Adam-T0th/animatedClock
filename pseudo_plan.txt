@@ -1,7 +1,7 @@
 - linear-gradient background
 - circle surrounding the current position of columns (i.e.: the current value of time) + bold text for the current value
 - 6 columns in total: 2 for each (hours, minutes, seconds)
-- white box shadow for columns; offset, with "light" coming from one side
+- white box shadow for columns; offset, with "light source" coming from one side
 
 document.on(pageLoad) {
     var hoursColumn_1 = document.querySelectorAll('div#hour-column-1 div');
